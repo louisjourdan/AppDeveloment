@@ -8,7 +8,7 @@ function init(){
     document.getElementById('btnJoke').addEventListener('click', getJoke, false);
     document.getElementById('btnQuery').addEventListener('click', getNewJoke, false);
     document.getElementById('btnZip').addEventListener('click', getWeather, false);
-    //document.getElementById('btnZip').addEventListener('change', getWeather, false);
+    document.getElementById('btnTrain').addEventListener('click', getTrain, false);
 }
 
 function getJoke(){
@@ -63,4 +63,33 @@ function showWeather(xml){
     output += "Temperature: " + temperature + "<br/>";
     output += "Description: " + description + "<br/>";
     document.getElementById('resultWeather').innerHTML = output;
+}
+
+
+function getTrain(){
+    $.ajax({
+        type: "GET",
+        url: "http://www3.septa.org/hackathon/Arrivals/90404/10",
+        dataType: "text",
+        success: function(result) {showTrain(result);}
+    });
+    
+}
+
+function showTrain(result){
+    var data = jQuery.parseJSON(result);
+    
+    var arr = data[Object.keys(data)];
+    var northbound = arr[0].Northbound;
+    var southbound = arr[1].Southbound;
+    
+    var output = "Northbound<br/>";
+    for(i=0; i<northbound.length; i++)
+        output += northbound[i].train_id + ": " + northbound[i].depart_time + ", " + northbound[i].destination + "<br/>";
+    
+    output += "Southbound<br/>";
+    for(i=0; i<southbound.length; i++)
+        output += southbound[i].train_id + ": " + southbound[i].depart_time + ", " + southbound[i].destination + "<br/>";
+    
+    document.getElementById("train").innerHTML = output;
 }

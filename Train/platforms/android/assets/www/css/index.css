@@ -1,0 +1,15 @@
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    column-span: all;
+    background-color: #0155A0;
+    color: white;
+}
+
+.row1{
+    background-color: #F15C2F;
+    color: white;
+}
