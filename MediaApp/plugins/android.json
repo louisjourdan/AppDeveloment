@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.louisjourdan.mediaapp"
+        }
+    }
+}
