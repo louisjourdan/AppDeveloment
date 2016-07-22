@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/index.js"></script>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <title>Census</title>
+</head>
+
+<body>
+
+    <div data-role="page" id="pageone" height="100%">
+        <div data-role="panel" id="myPanel">
+            <h2>States</h2>
+            <div data-role="controlgroup" data-type="vertical">
+                <a href="#infoPage" class="ui-btn" id="al">Alabama</a>
+                <a href="#infoPage" class="ui-btn" id="ak">Alaska</a>
+                <a href="#infoPage" class="ui-btn" id="az">Arizona</a>
+                <a href="#infoPage" class="ui-btn" id="ar">Arkansas</a>
+                <a href="#infoPage" class="ui-btn" id="ca">California</a>
+                <a href="#infoPage" class="ui-btn" id="co">Colorado</a>
+                <a href="#infoPage" class="ui-btn" id="ct">Connecticut</a>
+                <a href="#infoPage" class="ui-btn" id="de">Delaware</a>
+                <a href="#infoPage" class="ui-btn" id="fl">Florida</a>
+                <a href="#infoPage" class="ui-btn" id="ga">Georgia</a>
+                <a href="#infoPage" class="ui-btn" id="hi">Hawaii</a>
+                <a href="#infoPage" class="ui-btn" id="id">Idaho</a>
+                <a href="#infoPage" class="ui-btn" id="il">Illinois</a>
+                <a href="#infoPage" class="ui-btn" id="in">Indiana</a>
+                <a href="#infoPage" class="ui-btn" id="ia">Iowa</a>
+                <a href="#infoPage" class="ui-btn" id="ks">Kansas</a>
+                <a href="#infoPage" class="ui-btn" id="ky">Kentucky</a>
+                <a href="#infoPage" class="ui-btn" id="la">Louisiana</a>
+                <a href="#infoPage" class="ui-btn" id="me">Maine</a>
+                <a href="#infoPage" class="ui-btn" id="md">Maryland</a>
+                <a href="#infoPage" class="ui-btn" id="ma">Massachusetts</a>
+                <a href="#infoPage" class="ui-btn" id="mi">Michigan</a>
+                <a href="#infoPage" class="ui-btn" id="mn">Minnesota</a>
+                <a href="#infoPage" class="ui-btn" id="ms">Mississippi</a>
+                <a href="#infoPage" class="ui-btn" id="mo">Missouri</a>
+                <a href="#infoPage" class="ui-btn" id="mt">Montana</a>
+                <a href="#infoPage" class="ui-btn" id="ne">Nebraska</a>
+                <a href="#infoPage" class="ui-btn" id="nv">Nevada</a>
+                <a href="#infoPage" class="ui-btn" id="nh">New Hampshire</a>
+                <a href="#infoPage" class="ui-btn" id="nj">New Jersey</a>
+                <a href="#infoPage" class="ui-btn" id="nm">New Mexico</a>
+                <a href="#infoPage" class="ui-btn" id="ny">New York</a>
+                <a href="#infoPage" class="ui-btn" id="nc">North Carolina</a>
+                <a href="#infoPage" class="ui-btn" id="nd">North Dakota</a>
+                <a href="#infoPage" class="ui-btn" id="oh">Ohio</a>
+                <a href="#infoPage" class="ui-btn" id="ok">Oklahoma</a>
+                <a href="#infoPage" class="ui-btn" id="or">Oregon</a>
+                <a href="#infoPage" class="ui-btn" id="pa">Pennsylvania</a>
+                <a href="#infoPage" class="ui-btn" id="ri">Rhode Island</a>
+                <a href="#infoPage" class="ui-btn" id="sc">South Carolina</a>
+                <a href="#infoPage" class="ui-btn" id="sd">South Dakota</a>
+                <a href="#infoPage" class="ui-btn" id="tn">Tennessee</a>
+                <a href="#infoPage" class="ui-btn" id="tx">Texas</a>
+                <a href="#infoPage" class="ui-btn" id="ut">Utah</a>
+                <a href="#infoPage" class="ui-btn" id="vt">Vermont</a>
+                <a href="#infoPage" class="ui-btn" id="va">Virginia</a>
+                <a href="#infoPage" class="ui-btn" id="wa">Washington</a>
+                <a href="#infoPage" class="ui-btn" id="wv">West Virginia</a>
+                <a href="#infoPage" class="ui-btn" id="wi">Wisconsin</a>
+                <a href="#infoPage" class="ui-btn" id="wy">Wyoming</a>
+            </div>
+        </div>
+        <div data-role="header" data-theme='h'>
+            <h2>Census Info</h2>
+            <a href="#myPanel" class="ui-btn ui-icon-bars ui-btn-icon-left ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">States</a></br>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Census app</p>
+        </div>
+        <div data-role="footer" data-theme='f' data-position="fixed">
+            <h2>footer</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="infoPage">
+        <a href="#pageone" class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left">Page One</a>
+        <div id="table"></div>
+        <p></p>
+        <a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Page One</a>
+    </div>
+</body>
+
+</html>
